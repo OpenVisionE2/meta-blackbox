@@ -8,7 +8,7 @@ MACHINE_FEATURES += "textlcd ci omb dvb-c blindscan-dvbc blindscan-dvbs skins108
 
 SOC_FAMILY = "bcm7413"
 
-MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     blackbox-dvb-modules-blackbox7405 \
     "
 
@@ -19,11 +19,11 @@ ROOTFS_FILE = "rootfs.bin"
 
 DVBPROVIDER = "kernel"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     kernel-module-cdfs \
     "
 
-MACHINE_EXTRA_RRECOMMENDS = " \
+MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     "
 
@@ -45,7 +45,7 @@ KERNEL_CONSOLE = "ttyS0,115200n8"
 
 IMAGE_FSTYPES ?= "ubi"
 
-IMAGE_CMD_ubi_prepend = " \
+IMAGE_CMD_ubi_prepend = "\
     rm -rf ${IMAGE_ROOTFS}/boot/*; \
     rm -rf ${IMAGE_ROOTFS}/tmp/*; \
     "
