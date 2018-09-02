@@ -4,7 +4,8 @@ include conf/machine/include/build-extras.inc
 PREFERRED_PROVIDER_virtual/kernel = "linux-blackbox"
 PREFERRED_VERSION_linux-blackbox = "3.14.21"
 
-MACHINE_FEATURES += "textlcd ci omb dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs"
+MACHINE_FEATURES += "textlcd ci dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs 3dtv alsa hdmicec switchoff"
+#MACHINE_FEATURES += "bootsplash"
 
 SOC_FAMILY = "bcm7413"
 
@@ -69,9 +70,6 @@ IMAGE_CMD_ubi_append = "\
     rm -f ${DEPLOY_DIR_IMAGE}/.manifest; \
     rm -Rf ${IMAGEDIR}; \
     "
-
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff 3dtvpli omb"
-#MACHINE_FEATURES += "bootsplash"
 
 BOOTLOGO_FILENAME = "splash.bin"
 
