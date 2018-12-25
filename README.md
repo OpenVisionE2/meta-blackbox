@@ -1,2 +1,2 @@
 # meta-blackbox
-BlackBox BSP layer for PLi's OE
+BlackBox BSP layer for Open Vision
