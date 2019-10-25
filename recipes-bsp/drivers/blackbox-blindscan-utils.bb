@@ -8,7 +8,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
-COMPATIBLE_MACHINE = "(sogno8800hd|uniboxhde)"
+COMPATIBLE_MACHINE = "^(sogno8800hd|uniboxhde)$"
 
 PACKAGES = "blackbox-blindscan-dvbs-utils blackbox-blindscan-dvbc-utils"
 

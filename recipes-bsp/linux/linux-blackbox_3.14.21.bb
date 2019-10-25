@@ -3,7 +3,7 @@ SECTION = "kernel"
 LICENSE = "GPLv2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "(sogno8800hd|uniboxhde)"
+COMPATIBLE_MACHINE = "^(sogno8800hd|uniboxhde)$"
 
 inherit kernel machine_kernel_pr
 
