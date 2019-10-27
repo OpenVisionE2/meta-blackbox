@@ -7,7 +7,6 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-blackbox"
 PREFERRED_VERSION_linux-blackbox = "3.14.21"
 
 MACHINE_FEATURES += "textlcd ci dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs 3dtv alsa hdmicec switchoff"
-#MACHINE_FEATURES += "bootsplash"
 
 SOC_FAMILY = "bcm7413"
 
