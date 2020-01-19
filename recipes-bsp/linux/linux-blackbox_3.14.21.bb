@@ -36,6 +36,8 @@ SRC_URI += "http://source.mynonpublic.com/unibox/linux-${KV}-${SRCDATE}.tar.gz \
     file://0002-cp1emu-do-not-use-bools-for-arithmetic.patch \
     file://0003-log2-give-up-on-gcc-constant-optimizations.patch \
     file://kernel-add-support-for-gcc9.patch \
+    file://uaccess-dont-mark-register-as-const.patch \
+    file://makefile-silence-packed-not-aligned-warn.patch \
     "
 
 S = "${WORKDIR}/linux-${PV}"
