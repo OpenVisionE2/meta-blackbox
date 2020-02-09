@@ -24,6 +24,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/unibox/linux-${KV}-${SRCDATE}.tar.gz \
     file://defconfig \
+    file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
     file://nfs-max-rwsize-8k.patch \
     file://linux-3.14.21-gcc-4.9.3-build-error-fixed.patch \
     file://rtl8712-fix-warnings.patch \
@@ -35,7 +36,6 @@ SRC_URI += "http://source.mynonpublic.com/unibox/linux-${KV}-${SRCDATE}.tar.gz \
     file://genksyms_fix_typeof_handling.patch \
     file://0002-cp1emu-do-not-use-bools-for-arithmetic.patch \
     file://0003-log2-give-up-on-gcc-constant-optimizations.patch \
-    file://kernel-add-support-for-gcc9.patch \
     file://uaccess-dont-mark-register-as-const.patch \
     file://makefile-silence-packed-not-aligned-warn.patch \
     "
