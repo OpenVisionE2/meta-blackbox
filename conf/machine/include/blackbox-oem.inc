@@ -6,7 +6,10 @@ BOX_BRAND = "blackbox"
 PREFERRED_PROVIDER_virtual/kernel = "linux-blackbox"
 PREFERRED_VERSION_linux-blackbox = "3.14.21"
 
-MACHINE_FEATURES += "textlcd ci dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs 3dtv alsa hdmicec switchoff"
+MACHINE_FEATURES += "textlcd ci dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs 3dtv alsa hdmicec switchoff middleflash"
+
+# Broken bootloader can only flash around 100 MB
+FLASHSIZE = "96"
 
 SOC_FAMILY = "bcm7413"
 
