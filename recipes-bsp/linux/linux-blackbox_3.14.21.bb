@@ -24,7 +24,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/unibox/linux-${KV}-${SRCDATE}.tar.gz \
     file://defconfig \
-    file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
+    file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
     file://nfs-max-rwsize-8k.patch \
     file://linux-3.14.21-gcc-4.9.3-build-error-fixed.patch \
     file://rtl8712-fix-warnings.patch \
