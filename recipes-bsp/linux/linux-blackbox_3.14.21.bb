@@ -5,7 +5,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(sogno8800hd|uniboxhde)$"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 KV = "3.14.21"
 SRCDATE = "20151003"
