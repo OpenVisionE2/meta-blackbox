@@ -3,12 +3,8 @@ SECTION = "base"
 PRIORITY = "optional"
 RDEPENDS_${PN} = "ncurses"
 
-PACKAGE_ARCH = "${MACHINE_ARCH}"
-
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
-
-COMPATIBLE_MACHINE = "^(sogno8800hd|uniboxhde)$"
 
 PACKAGES = "blackbox-blindscan-dvbs-utils blackbox-blindscan-dvbc-utils"
 
@@ -36,3 +32,5 @@ INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 do_compile[noexec] = "1"
 deltask do_populate_sysroot
+
+BLINDSCAN_BINARY = "blackbox_blindscan"
