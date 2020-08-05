@@ -50,7 +50,6 @@ IMAGE_CMD_ubi_prepend = "\
     rm -rf ${IMAGE_ROOTFS}/tmp/*; \
     "
 
-UBI_VOLNAME = "rootfs"
 UBINIZE_ARGS = "-m 2048 -p 128KiB"
 
 IMAGE_CMD_ubi_append = "\
