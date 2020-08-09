@@ -8,6 +8,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI = "http://source.mynonpublic.com/unibox/linuxdvb_7405-${KV}-${SRCDATE}.tar.gz"
 
+KV = "${KERNELVERSION}"
+
 PV = "${KV}+${SRCDATE}"
 
 S = "${WORKDIR}"

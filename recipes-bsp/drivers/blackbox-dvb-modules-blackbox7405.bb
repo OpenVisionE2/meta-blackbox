@@ -1,4 +1,3 @@
-KV = "3.14.21"
 SRCDATE = "20161207"
 
 SRC_URI[md5sum] = "193181a1b759e20bd0cec03bbc41c204"

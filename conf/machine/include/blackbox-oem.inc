@@ -1,10 +1,12 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
+KERNELVERSION = "3.14.21"
+
 BOX_BRAND = "blackbox"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-blackbox"
-PREFERRED_VERSION_linux-blackbox = "3.14.21"
+PREFERRED_VERSION_linux-blackbox = "${KERNELVERSION}"
 
 MACHINE_FEATURES += "textlcd ci dvb-c blindscan-dvbc blindscan-dvbs blindscan-tbs alsa hdmicec switchoff HDMI SCART RCA"
 
@@ -14,8 +16,8 @@ FLASHSIZE = "96"
 SOC_FAMILY = "bcm7413"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    blackbox-dvb-modules-blackbox7405 \
-    "
+	blackbox-dvb-modules-blackbox7405 \
+	"
 
 MTD_ROOTFS = "mtd6"
 MTD_KERNEL = "mtd7"
@@ -27,7 +29,6 @@ DVBPROVIDER = "kernel"
 MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     "
-
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm"
 
