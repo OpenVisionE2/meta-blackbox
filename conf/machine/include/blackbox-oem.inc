@@ -71,3 +71,5 @@ BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
 require conf/machine/include/soc-family.inc
+
+BLINDSCAN_BINARY = "blackbox_blindscan"
