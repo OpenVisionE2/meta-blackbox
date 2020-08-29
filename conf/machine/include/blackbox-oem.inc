@@ -17,6 +17,7 @@ SOC_FAMILY = "bcm7413"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	blackbox-dvb-modules-blackbox7405 \
+	gstreamer1.0-plugin-dvbmediasink \
 	"
 
 MTD_ROOTFS = "mtd6"
@@ -25,10 +26,6 @@ KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
 DVBPROVIDER = "kernel"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
-    gstreamer1.0-plugin-dvbmediasink \
-    "
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm"
 
