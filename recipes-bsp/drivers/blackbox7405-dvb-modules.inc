@@ -8,7 +8,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI = "http://source.mynonpublic.com/unibox/linuxdvb_7405-${KV}-${SRCDATE}.tar.gz"
 
-
 PV = "${KV}+${SRCDATE}"
 
 S = "${WORKDIR}"
@@ -16,9 +15,6 @@ S = "${WORKDIR}"
 INHIBIT_PACKAGE_STRIP = "1"
 
 do_compile() {
-}
-
-do_populate_sysroot() {
 }
 
 do_install() {
