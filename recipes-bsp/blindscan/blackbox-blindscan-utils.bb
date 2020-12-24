@@ -1,10 +1,12 @@
 SUMMARY = "Utilities for transponder & dvb-c/s blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-RDEPENDS_${PN} = "ncurses"
-
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
+
+COMPATIBLE_MACHINE = "^(sogno8800hd|uniboxhde)$"
+
+RDEPENDS_${PN} = "ncurses"
 
 PACKAGES = "blackbox-blindscan-dvbs-utils blackbox-blindscan-dvbc-utils"
 
