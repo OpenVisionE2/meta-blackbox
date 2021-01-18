@@ -17,7 +17,6 @@ SOC_FAMILY = "bcm7413"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	blackbox-dvb-modules-blackbox7405 \
-	gstreamer1.0-plugin-dvbmediasink \
 	"
 
 MTD_ROOTFS = "mtd6"
