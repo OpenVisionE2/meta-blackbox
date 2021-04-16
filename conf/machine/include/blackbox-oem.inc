@@ -24,7 +24,6 @@ MTD_KERNEL = "mtd7"
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
-DVBPROVIDER = "kernel"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm"
 
